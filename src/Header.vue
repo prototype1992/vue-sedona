@@ -1,7 +1,7 @@
 <template>
     <header class="page-header">
         <nav class="main-menu">
-            <a href="#">
+            <a href="/">
                 <img class="page-logo" src="./assets/img/logo.png" alt="Седона" height="70" width="138">
             </a>
             <ul class="menu-list">

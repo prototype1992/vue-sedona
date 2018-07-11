@@ -5,7 +5,8 @@
 
         <main>
 
-            <indexPage/>
+            <!--<indexPage/>-->
+            <hotelsPage/>
 
         </main>
 
@@ -17,23 +18,18 @@
 	import Header from "./Header";
 	import Footer from "./Footer";
 	import indexPage from "./pages/indexPage";
+	import hotelsPage from "./pages/hotelsPage";
 
 	export default {
 		components: {
 			'myHeader': Header,
 			'myFooter': Footer,
 			'indexPage': indexPage,
+			'hotelsPage': hotelsPage,
 		},
 		name: 'app',
 		data() {
-			return {
-				mainMenu: [
-					'Информация',
-					'Фото и видео',
-					'Карта штата',
-					'Гостиницы'
-				]
-			}
+			return {}
 		}
 	}
 </script>
@@ -65,6 +61,10 @@
         padding: 0;
 
         border: 0;
+    }
+
+    main {
+        min-height: 300px;
     }
 
     .container {
