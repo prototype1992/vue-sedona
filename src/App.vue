@@ -5,8 +5,7 @@
 
         <main>
 
-            <indexPage/>
-            <!--<hotelsPage/>-->
+            <router-view/>
 
         </main>
 
@@ -17,15 +16,15 @@
 <script>
 	import Header from "./components/Header";
 	import Footer from "./components/Footer";
-	import indexPage from "./pages/indexPage";
-	import hotelsPage from "./pages/hotelsPage";
+	import home from "./pages/home";
+	import hotels from "./pages/hotels";
 
 	export default {
 		components: {
 			'myHeader': Header,
 			'myFooter': Footer,
-			'indexPage': indexPage,
-			'hotelsPage': hotelsPage,
+			'home': home,
+			'hotels': hotels
 		},
 		name: 'app',
 		data() {
@@ -64,7 +63,7 @@
     }
 
     main {
-        min-height: 300px;
+        min-height: calc(100vh - 56px);
     }
 
     .container {

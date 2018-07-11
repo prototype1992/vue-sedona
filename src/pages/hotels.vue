@@ -195,7 +195,4 @@
 </script>
 
 <style>
-    #hotels {
-        margin-bottom: 120px;
-    }
 </style>

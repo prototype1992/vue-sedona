@@ -1,12 +1,18 @@
 <template>
     <header class="page-header">
         <nav class="main-menu">
-            <a href="/">
-                <img class="page-logo" src="../assets/img/logo.png" alt="Седона" height="70" width="138">
-            </a>
+            <router-link to="/">
+                <img
+                    class="page-logo"
+                    src="../assets/img/logo.png"
+                    alt="Седона"
+                >
+            </router-link>
             <ul class="menu-list">
                 <li class="menu-item-left" v-for="menu in mainMenu">
-                    <a class="text-link" href="#">{{menu}}</a>
+                    <router-link :to="menu.link" class="text-link">
+                        {{menu.text}}
+                    </router-link>
                 </li>
             </ul>
         </nav>
@@ -19,10 +25,22 @@
     	data() {
     		return {
 				mainMenu: [
-					'Информация',
-					'Фото и видео',
-					'Карта штата',
-					'Гостиницы'
+					{
+						link: '/info',
+						text: 'Информация'
+					},
+					{
+						link: '/photo-video',
+						text: 'Фото и видео'
+					},
+					{
+						link: '/map',
+						text: 'Карта штата'
+					},
+					{
+						link: '/hotels',
+						text: 'Гостиницы'
+					}
 				]
             }
         }
