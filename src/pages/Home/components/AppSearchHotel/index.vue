@@ -6,7 +6,11 @@
       и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
     <div class="search-hotel-form">
-      <a href="#" class="search-hotels-btn brown-btn" @click="toggleForm">
+      <a
+        href="#"
+        class="search-hotels-btn"
+        @click.prevent="toggleForm"
+      >
         Поиск гостиницы в Седоне
       </a>
     </div>
@@ -14,25 +18,24 @@
 </template>
 
 <script>
-  import {mapGetters, mapMutations} from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 
-  export default {
-    name: "AppSearchHotel",
-    computed: {
-      ...mapGetters({
-        getOpenForm: 'getOpenForm',
-      }),
+export default {
+  name: 'AppSearchHotel',
+  computed: {
+    ...mapGetters({
+      getOpenForm: 'getOpenForm',
+    }),
+  },
+  methods: {
+    ...mapMutations({
+      setOpenForm: 'setOpenForm',
+    }),
+    toggleForm() {
+      this.setOpenForm(!this.getOpenForm);
     },
-    methods: {
-      ...mapMutations({
-        setOpenForm: 'setOpenForm',
-      }),
-      toggleForm(event) {
-        event.preventDefault();
-        this.setOpenForm(!this.getOpenForm);
-      },
-    },
-  }
+  },
+};
 </script>
 
 <style lang="scss" scoped>

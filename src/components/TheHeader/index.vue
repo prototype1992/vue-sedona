@@ -23,31 +23,31 @@
 </template>
 
 <script>
-  export default {
-    name: 'AppHeader',
-    data() {
-      return {
-        mainMenu: [
-          {
-            link: '/info',
-            text: 'Информация'
-          },
-          {
-            link: '/photo-video',
-            text: 'Фото и видео'
-          },
-          {
-            link: '/map',
-            text: 'Карта штата'
-          },
-          {
-            link: '/hotels',
-            text: 'Гостиницы'
-          }
-        ]
-      }
-    },
-  }
+export default {
+  name: 'AppHeader',
+  data() {
+    return {
+      mainMenu: [
+        {
+          link: '/info',
+          text: 'Информация',
+        },
+        {
+          link: '/photo-video',
+          text: 'Фото и видео',
+        },
+        {
+          link: '/map',
+          text: 'Карта штата',
+        },
+        {
+          link: '/hotels',
+          text: 'Гостиницы',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">

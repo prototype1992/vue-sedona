@@ -8,12 +8,13 @@
 </template>
 
 <script>
-  import GoogleMap from '@/components/GoogleMap';
+import GoogleMap from '@/components/GoogleMap';
 
-  export default {
-    name: "InfoPage",
-    components: {
-      GoogleMap,
-    },
-  };
+export default {
+  name: 'InfoPage',
+
+  components: {
+    GoogleMap,
+  },
+};
 </script>

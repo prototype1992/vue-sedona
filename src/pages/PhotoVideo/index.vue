@@ -41,10 +41,10 @@
 </template>
 
 <script>
-  export default {
-    name: "PhotoVideo",
-    components: {},
-  }
+export default {
+  name: 'PhotoVideo',
+  components: {},
+};
 </script>
 
 <style lang="scss" scoped>

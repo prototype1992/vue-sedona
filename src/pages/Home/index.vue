@@ -48,25 +48,61 @@
 </template>
 
 <script>
-  import AppPoster from './components/AppPoster';
-  import AppIntro from './components/AppIntro';
-  import AppServices from './components/AppServices';
-  import AppTown from './components/AppTown';
-  import AppSearchHotel from './components/AppSearchHotel';
-  import AppMap from './components/AppMap';
+import AppPoster from './components/AppPoster';
+import AppIntro from './components/AppIntro';
+import AppServices from './components/AppServices';
+import AppTown from './components/AppTown';
+import AppSearchHotel from './components/AppSearchHotel';
+import AppMap from './components/AppMap';
 
-  export default {
-    name: 'indexPage',
-    components: {
-      AppPoster,
-      AppIntro,
-      AppServices,
-      AppTown,
-      AppSearchHotel,
-      AppMap,
-    },
-  }
+export default {
+  name: 'indexPage',
+  components: {
+    AppPoster,
+    AppIntro,
+    AppServices,
+    AppTown,
+    AppSearchHotel,
+    AppMap,
+  },
+};
 </script>
 
 <style lang="scss">
+  @import "../../assets/styles/colors";
+
+  .bridge-right {
+    p {
+      &:last-child {
+        padding: 0 40px;
+      }
+    }
+  }
+
+  .bridge {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 256px;
+  }
+
+  .more-advantages {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .advantages-item {
+      color: #333;
+      background-color: #eee;
+    }
+
+    h3 {
+      color: $color-black;
+    }
+  }
+
+  .advantages-item-tourist p:nth-of-type(2) {
+    padding: 0 75px;
+  }
 </style>

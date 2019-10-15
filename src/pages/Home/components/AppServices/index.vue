@@ -1,6 +1,5 @@
 <template>
   <section class="services">
-    <h3 class="visually-hidden">В городке Вы найдете:</h3>
     <div class="service-item house">
       <h4>Жильё</h4>
       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -17,9 +16,9 @@
 </template>
 
 <script>
-  export default {
-    name: "AppServices"
-  }
+export default {
+  name: 'AppServices',
+};
 </script>
 
 <style lang="scss" scoped>

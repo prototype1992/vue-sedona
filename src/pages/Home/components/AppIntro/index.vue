@@ -10,9 +10,9 @@
 </template>
 
 <script>
-    export default {
-        name: "AppIntro"
-    }
+export default {
+  name: 'AppIntro',
+};
 </script>
 
 <style lang="scss" scoped>

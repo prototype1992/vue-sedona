@@ -27,7 +27,8 @@ body {
 
 .page-wrap {
   padding: 50px 72px;
-  .page-wrap__title {
+
+  &__title {
     text-transform: uppercase;
     text-align: left;
     margin-top: 0;
@@ -35,25 +36,12 @@ body {
     border-left: 3px solid $color-black;
     padding-left: 10px;
   }
-  .page-wrap__content {
+
+  &__content {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
 }
 
 a {
@@ -63,15 +51,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.brown-btn:hover,
-.brown-btn:focus {
-  color: $color-white;
-  background: #604e43;
-}
-
-.brown-btn:active {
-  color: #928a85;
-  background: #503e33;
 }

@@ -17,9 +17,9 @@
 </template>
 
 <script>
-  export default {
-    name: "AppTown"
-  }
+export default {
+  name: 'AppTown',
+};
 </script>
 
 <style lang="scss" scoped>

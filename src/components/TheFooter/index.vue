@@ -4,7 +4,6 @@
     <ul class="social-list">
       <li class="social social-tw">
         <a class="social-button" href="https://twitter.com/" title="Twitter" target="_blank">
-          <span class="visually-hidden">Twitter</span>
           <svg
             height="15"
             width="17"
@@ -19,7 +18,6 @@
       </li>
       <li class="social social-fb">
         <a class="social-button" href="https://www.facebook.com/" title="Facebook" target="_blank">
-          <span class="visually-hidden">Facebook</span>
           <svg height="22" viewBox="0 0 12 22" width="12" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#FFF"></path>
           </svg>
@@ -27,7 +25,6 @@
       </li>
       <li class="social social-vk">
         <a class="social-button" href="https://vk.com/" title="YouTube" target="_blank">
-          <span class="visually-hidden">YouTube</span>
           <svg
             height="16"
             width="20"
@@ -51,17 +48,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'AppFooter',
-    computed: {
-      footerClasses() {
-        return {
-          'page-footer': true,
-          'page-footer_is-home-page': this.$route.path === '/',
-        };
-      },
+export default {
+  name: 'AppFooter',
+  computed: {
+    footerClasses() {
+      return {
+        'page-footer': true,
+        'page-footer_is-home-page': this.$route.path === '/',
+      };
     },
-  }
+  },
+};
 </script>
 
 <style lang="scss" scoped>

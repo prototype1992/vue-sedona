@@ -11,9 +11,9 @@
 </template>
 
 <script>
-    export default {
-        name: "AppPoster"
-    }
+export default {
+  name: 'AppPoster',
+};
 </script>
 
 <style lang="scss" scoped>

@@ -11,9 +11,9 @@
 </template>
 
 <script>
-  export default {
-    name: "GoogleMap"
-  }
+export default {
+  name: 'GoogleMap',
+};
 </script>
 
 <style lang="scss" scoped>
